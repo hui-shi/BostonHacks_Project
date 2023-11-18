@@ -21,6 +21,6 @@ Python
 
 
 ## Team Members:
-Hui Shi
-Lulu Jiang
-Matthew
+Hui Shi [huishi@bu.edu]
+ <br />Lulu Jiang [lulujiang219@gmail.com][luluj@bu.edu]
+ <br />Matthew He Yan [mhyan@bu.edu][notm477h3w@gmail.com]
