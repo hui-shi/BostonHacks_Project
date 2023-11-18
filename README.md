@@ -1,6 +1,14 @@
-# BostonHacks_Project: Banana Ripeness Prediction
+# BostonHacks_Project: Sustainable Solutions Track
 
-This project aims to develop a web user interface using Streamlit and Python machine/deep learning to train convolutional neural networks (CNNs) for extracting features from ripe and unripe banana images. The trained CNN model will be used to predict the ripeness of a banana when the user uploads an image of their banana.
+### **Goal: Promote sustainable food habits and reduce household banana waste.**
+
+Bananas are one of the most wasted foods globally[<sup>1</sup>](https://www.openaccessgovernment.org/browning-banana-food-waste-household/135392/). This project aims to tackle this challenge through a machine learning tool that empowers sustainable banana consumption.
+
+The tool classifies banana ripeness from images using a convolutional neural network (CNN) model trained on labeled data of ripe and unripe bananas. The CNN extracts visual features to accurately predict if an uploaded banana image is ripe or unripe.
+
+A user-friendly web application built with Streamlit allows households to get ripeness predictions on their bananas by uploading images. For bananas classified as ripe, the app suggests recipes to fully utilize the banana and prevent waste.
+
+By providing easy access to ripeness prediction and recommended uses for ripe bananas, this project aims to reduce banana waste, promote sustainable food consumption habits, and contribute to a more environmentally conscious society. The customizable model and interface are designed for extensibility to other fruits.
 
 ## Project Overview
 
