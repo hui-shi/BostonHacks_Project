@@ -11,9 +11,9 @@ Model Training and Implementation: Train a CNN model using the preprocessed bana
 
 ## Technologies Used
 Python
-Streamlit
-TensorFlow
-Keras
+ <br /> Streamlit
+ <br /> TensorFlow
+ <br /> Keras
 
 ## Project Setup
 
