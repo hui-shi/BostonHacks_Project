@@ -3,17 +3,24 @@
 This project aims to develop a web user interface using Streamlit and Python machine/deep learning to train convolutional neural networks (CNNs) for extracting features from ripe and unripe banana images. The trained CNN model will be used to predict the ripeness of a banana when the user uploads an image of their banana.
 
 ## Project Overview
-The project is divided into two main phases:
 
-Data Collection and Preprocessing: Collect a dataset of images of ripe and unripe bananas. Preprocess the images by resizing, normalizing, and augmenting them to enhance the model's performance.
+### Back end:
+**1. Data Collection and Preprocessing**:  <br /> 
+- Collect a dataset of images of ripe and unripe bananas (80% for training and 20% for validation).
+- Preprocessed the images by resizing to 150x150 pixels and normalizing pixel values to [0,1].
 
-Model Training and Implementation: Train a CNN model using the preprocessed banana image data. Integrate the trained model into a Streamlit web application, enabling users to upload banana images and receive real-time ripeness predictions.
+**2. Model Training and Implementation**: <br /> 
+- Evaluated model performance on the validation set in terms of loss and accuracy.
+- Achieved a validation accuracy of 99.9% after 10 epochs of training.
+
+### Front end:  <br /> 
+Integrated the trained model into a Streamlit web application. Users can upload images of bananas and receive ripeness predictions.
 
 ## Technologies Used
 Python
  <br /> Streamlit
- <br /> TensorFlow
  <br /> Keras
+ <br />matplotlib
 
 ## Project Setup
 
