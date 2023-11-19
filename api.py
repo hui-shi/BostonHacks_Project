@@ -46,21 +46,30 @@ data = requests.get(url).json()
 #print("Recipe Link: " + recipeLink)
 #print("Ingredients: " + recipeIngredients)
 # Using "with" notation
+parsedIngredients = []
+
+for count in range(10):
+    temp = ""
+    for ingredients in data["hits"][count]["recipe"]["ingredientLines"]:
+        temp = temp + ingredients + "\n"
+    parsedIngredients.append(temp)
+
+st.write(parsedIngredients)
 
 def main():
     # Define section titles and corresponding content
     sections = [
 
-        {"title": data["hits"][0]["recipe"]["label"], "content": data["hits"][1]["recipe"]["ingredientLines"], "url": data["hits"][0]["recipe"]["url"]},
-        {"title": data["hits"][1]["recipe"]["label"], "content": data["hits"][1]["recipe"]["ingredientLines"], "url": data["hits"][1]["recipe"]["url"]},
-        {"title": data["hits"][2]["recipe"]["label"], "content": data["hits"][2]["recipe"]["ingredientLines"], "url": data["hits"][2]["recipe"]["url"]},
-        {"title": data["hits"][3]["recipe"]["label"], "content": data["hits"][3]["recipe"]["ingredientLines"], "url": data["hits"][3]["recipe"]["url"]},
-        {"title": data["hits"][4]["recipe"]["label"], "content": data["hits"][4]["recipe"]["ingredientLines"], "url": data["hits"][4]["recipe"]["url"]},
-        {"title": data["hits"][5]["recipe"]["label"], "content": data["hits"][5]["recipe"]["ingredientLines"], "url": data["hits"][5]["recipe"]["url"]},
-        {"title": data["hits"][6]["recipe"]["label"], "content": data["hits"][6]["recipe"]["ingredientLines"], "url": data["hits"][6]["recipe"]["url"]},
-        {"title": data["hits"][7]["recipe"]["label"], "content": data["hits"][7]["recipe"]["ingredientLines"], "url": data["hits"][7]["recipe"]["url"]},
-        {"title": data["hits"][8]["recipe"]["label"], "content": data["hits"][8]["recipe"]["ingredientLines"], "url": data["hits"][8]["recipe"]["url"]},
-        {"title": data["hits"][9]["recipe"]["label"], "content": data["hits"][9]["recipe"]["ingredientLines"], "url": data["hits"][9]["recipe"]["url"]},
+        {"title": data["hits"][0]["recipe"]["label"], "content": st.markdown(parsedIngredients[0]), "url": data["hits"][0]["recipe"]["url"]},
+        {"title": data["hits"][1]["recipe"]["label"], "content": parsedIngredients[1], "url": data["hits"][1]["recipe"]["url"]},
+        {"title": data["hits"][2]["recipe"]["label"], "content": parsedIngredients[2], "url": data["hits"][2]["recipe"]["url"]},
+        {"title": data["hits"][3]["recipe"]["label"], "content": parsedIngredients[3], "url": data["hits"][3]["recipe"]["url"]},
+        {"title": data["hits"][4]["recipe"]["label"], "content": parsedIngredients[4], "url": data["hits"][4]["recipe"]["url"]},
+        {"title": data["hits"][5]["recipe"]["label"], "content": parsedIngredients[5], "url": data["hits"][5]["recipe"]["url"]},
+        {"title": data["hits"][6]["recipe"]["label"], "content": parsedIngredients[6], "url": data["hits"][6]["recipe"]["url"]},
+        {"title": data["hits"][7]["recipe"]["label"], "content": parsedIngredients[7], "url": data["hits"][7]["recipe"]["url"]},
+        {"title": data["hits"][8]["recipe"]["label"], "content": parsedIngredients[8], "url": data["hits"][8]["recipe"]["url"]},
+        {"title": data["hits"][9]["recipe"]["label"], "content": parsedIngredients[9], "url": data["hits"][9]["recipe"]["url"]},
         # Add more sections as needed
     ]
 
