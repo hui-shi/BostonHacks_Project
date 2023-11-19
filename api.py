@@ -51,16 +51,17 @@ parsedIngredients = []
 for count in range(10):
     temp = ""
     for ingredients in data["hits"][count]["recipe"]["ingredientLines"]:
-        temp = temp + ingredients + "\n"
+        temp = temp + ingredients + "  \n"
     parsedIngredients.append(temp)
 
-st.write(parsedIngredients)
+#st.write(parsedIngredients)
+#st.write(st.markdown(parsedIngredients[0]))
 
 def main():
     # Define section titles and corresponding content
     sections = [
 
-        {"title": data["hits"][0]["recipe"]["label"], "content": st.markdown(parsedIngredients[0]), "url": data["hits"][0]["recipe"]["url"]},
+        {"title": data["hits"][0]["recipe"]["label"], "content": parsedIngredients[0], "url": data["hits"][0]["recipe"]["url"]},
         {"title": data["hits"][1]["recipe"]["label"], "content": parsedIngredients[1], "url": data["hits"][1]["recipe"]["url"]},
         {"title": data["hits"][2]["recipe"]["label"], "content": parsedIngredients[2], "url": data["hits"][2]["recipe"]["url"]},
         {"title": data["hits"][3]["recipe"]["label"], "content": parsedIngredients[3], "url": data["hits"][3]["recipe"]["url"]},
