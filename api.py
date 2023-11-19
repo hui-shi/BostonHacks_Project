@@ -12,7 +12,7 @@ url = url1 + fruit + url2
 
 data = requests.get(url).json()
 
-#st.write(data)
+st.write(data)
 
 #dataParsed = json.loads(data)
 
@@ -35,10 +35,12 @@ data = requests.get(url).json()
 #print("Recipe Link: " + recipeLink)
 #print("Ingredients: " + recipeIngredients)
 # Using "with" notation
+
 def main():
     # Define section titles and corresponding content
     sections = [
-        {"title": data["hits"][0]["recipe"]["label"], "content": JSON.stringify(data["hits"][0]["recipe"]["ingredientLines"])},
+
+        {"title": data["hits"][0]["recipe"]["label"], "content": data["hits"][1]["recipe"]["ingredientLines"]},
         {"title": data["hits"][1]["recipe"]["label"], "content": data["hits"][1]["recipe"]["ingredientLines"]},
         {"title": data["hits"][2]["recipe"]["label"], "content": data["hits"][2]["recipe"]["ingredientLines"]},
         {"title": data["hits"][3]["recipe"]["label"], "content": data["hits"][3]["recipe"]["ingredientLines"]},
@@ -52,7 +54,7 @@ def main():
     ]
 
     st.sidebar.title("Choose a recipe!")
-    
+    '''
     # Create a sidebar with dynamic links
     selected_section = st.sidebar.radio("Select Section", [section["title"] for section in sections])
 
@@ -61,6 +63,7 @@ def main():
         if selected_section == section["title"]:
             st.header(section["title"])
             st.write(section["content"])
+            '''
 
 if __name__ == "__main__":
     main()
