@@ -2,7 +2,7 @@
 
 ### **Goal: Promote sustainable food habits and reduce household banana waste.**
 
-Food waste is a major environmental issue that often falls under the radar. According to one statistic, "40% of food produced, processed, and transported in the U.S. is wasted and ends up in our landfills" [source](https://www.rescuingleftovercuisine.org/challenge?gad_source=1&gclid=Cj0KCQiA3uGqBhDdARIsAFeJ5r2bf9zu4hONZ45O7n7HOI3HEtk_oiF0UBkJLzPuD5gIfFl_bdHv2DUaAhjLEALw_wcB). To bring more awareness to this issue and to help combat it (to some extent) we have developed this web interface.
+Food waste is a major environmental issue that often falls under the radar. According to one statistic, "40% of food produced, processed, and transported in the U.S. is wasted and ends up in our landfills" [(Rescuing Leftover Cuisine)](https://www.rescuingleftovercuisine.org/challenge?gad_source=1&gclid=Cj0KCQiA3uGqBhDdARIsAFeJ5r2bf9zu4hONZ45O7n7HOI3HEtk_oiF0UBkJLzPuD5gIfFl_bdHv2DUaAhjLEALw_wcB). To bring more awareness to this issue and to help combat it (to some extent) we have developed this web interface.
 
 Through our user-friendly front-end built with Streamlit, our web interface allows the user to upload any image of any fruit. Based on the uploaded image, our web interface can then determine the fruit's ripeness using a convolutional neural network (CNN) model trained on labeled data of ripe and unripe bananas. The CNN extracts visual features to accurately predict if an uploaded banana image is ripe or unripe. For fruits determined as ripe, the app will suggest recipes that allow the user to fully utilize the fruit and reduce waste.
 
