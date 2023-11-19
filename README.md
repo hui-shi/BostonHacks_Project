@@ -2,19 +2,17 @@
 
 ### **Goal: Promote sustainable food habits and reduce household banana waste.**
 
-Bananas are one of the most wasted foods globally[<sup>1</sup>](https://www.openaccessgovernment.org/browning-banana-food-waste-household/135392/). This project aims to tackle this challenge through a machine learning tool that empowers sustainable banana consumption.
+Food waste is a major environmental issue that often falls under the radar. According to one statistic, "40% of food produced, processed, and transported in the U.S. is wasted and ends up in our landfills" [source](https://www.rescuingleftovercuisine.org/challenge?gad_source=1&gclid=Cj0KCQiA3uGqBhDdARIsAFeJ5r2bf9zu4hONZ45O7n7HOI3HEtk_oiF0UBkJLzPuD5gIfFl_bdHv2DUaAhjLEALw_wcB). To bring more awareness to this issue and to help combat it (to some extent) we have developed this web interface.
 
-The tool classifies banana ripeness from images using a convolutional neural network (CNN) model trained on labeled data of ripe and unripe bananas. The CNN extracts visual features to accurately predict if an uploaded banana image is ripe or unripe.
+Through our user-friendly front-end built with Streamlit, our web interface allows the user to upload any image of any fruit. Based on the uploaded image, our web interface can then determine the fruit's ripeness using a convolutional neural network (CNN) model trained on labeled data of ripe and unripe bananas. The CNN extracts visual features to accurately predict if an uploaded banana image is ripe or unripe. For fruits determined as ripe, the app will suggest recipes that allow the user to fully utilize the fruit and reduce waste.
 
-A user-friendly web application built with Streamlit allows households to get ripeness predictions on their bananas by uploading images. For bananas classified as ripe, the app suggests recipes to fully utilize the banana and prevent waste.
-
-By providing easy access to ripeness prediction and recommended uses for ripe bananas, this project aims to reduce banana waste, promote sustainable food consumption habits, and contribute to a more environmentally conscious society. The customizable model and interface are designed for extensibility to other fruits.
+By providing easy access to ripeness prediction and recommended uses for still-ripe fruits, this project aims to reduce food waste, promote sustainable food consumption habits, and contribute to a more environmentally conscious society.
 
 ## Project Overview
 
 ### Back end:
 **1. Data Collection and Preprocessing**:  <br /> 
-- Collect a dataset of images of ripe and unripe bananas (80% for training and 20% for validation).
+- Collect a dataset of images of ripe and unripe fruits (80% for training and 20% for validation).
 - Preprocessed the images by resizing to 150x150 pixels and normalizing pixel values to [0,1].
 
 **2. Model Training and Implementation**: <br /> 
@@ -22,18 +20,13 @@ By providing easy access to ripeness prediction and recommended uses for ripe ba
 - Achieved a validation accuracy of 99.9% after 10 epochs of training.
 
 ### Front end:  <br /> 
-Integrated the trained model into a Streamlit web application. Users can upload images of bananas and receive ripeness predictions.
+Integrated the trained model into a Streamlit web interface. Users can upload images of fruits and know whether the fruit is ripe or not.
 
 ## Technologies Used
 Python
  <br /> Streamlit
  <br /> Keras
  <br />matplotlib
-
-## Project Setup
-
-## Running the Project
-
 
 ## Team Members:
 Hui Shi [huishi@bu.edu]
