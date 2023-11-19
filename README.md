@@ -26,7 +26,8 @@ Integrated the trained model into a Streamlit web interface. Users can upload im
 Python
  <br /> Streamlit
  <br /> Keras
- <br />matplotlib
+ <br /> matplotlib
+ <br /> tensorflow
 
 ## Team Members:
 Hui Shi [huishi@bu.edu]
